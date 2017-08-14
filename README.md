@@ -2,15 +2,15 @@
 
 ## Plan
 
-### Day 1 - Introduction to ORM
+### 21-08-17: Day 1 - Introduction to ORM
 
-### Day 2 - More JPA
+### 22-08-17: Day 2 - More JPA
 
-### Day 3 - JPA & Inheritance
+### 23-08-17: Day 3 - JPA & Inheritance
 
-### Day 4 - JPQL
+### 24-08-17: Day 4 - JPQL
 
-### Day 5 - Study point exercises
+### 25-08-17: Day 5 - Study point exercises
 
 ## Learning objectives
 
@@ -37,3 +37,9 @@ ORM / JPA / JPQL
 <a href="http://tutorialspoint.com/jpa/" target="_blank">Tutorialspoint - JPA</a><br>
 <a href="https://hendrosteven.wordpress.com/2008/03/06/simple-jpa-application-with-netbeans" target="_blank">Simple JPA Application</a><br>
 <a href="http://www.javacodegeeks.com/2015/02/jpa-tutorial.html" target="_blank">The ULTIMATE Guide</a>
+
+### Professional skills
+
+- be able to work with databases through an ORM framework.
+- ​
+
