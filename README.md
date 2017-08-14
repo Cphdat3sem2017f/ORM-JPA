@@ -1,8 +1,14 @@
 # ORM (Object Relational Mapping) with JPA (Java Persistence API)
 
+Individual exercises and reading guides for COS and DAT classes can be found here:
+
+[DAT](https://github.com/Cphdat3sem2017f/ORM-JPA/tree/master/DAT) - [COS](https://github.com/Cphdat3sem2017f/ORM-JPA/tree/master/COS)
+
 ## Plan
 
 ### 21-08-17: Day 1 - Introduction to ORM
+
+Links to daily exercise: 
 
 ### 22-08-17: Day 2 - More JPA
 
@@ -28,15 +34,12 @@ ORM / JPA / JPQL
 
 
 ## Exercises 
-[Exercise 1 - Basic JPA](https://drive.google.com/open?id=1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME)<br>
-[Exercise 2 - Relationships](https://drive.google.com/open?id=1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY)<br>
-[Exercise 3 - Inheritance](https://drive.google.com/open?id=1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI)<br>
-[Exercise 4 - JPQL](https://drive.google.com/open?id=18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc)
+
 
 ## Resources: 
-<a href="http://tutorialspoint.com/jpa/" target="_blank">Tutorialspoint - JPA</a><br>
-<a href="https://hendrosteven.wordpress.com/2008/03/06/simple-jpa-application-with-netbeans" target="_blank">Simple JPA Application</a><br>
-<a href="http://www.javacodegeeks.com/2015/02/jpa-tutorial.html" target="_blank">The ULTIMATE Guide</a>
+<a href="http://tutorialspoint.com/jpa/" target="_blank">1. Tutorialspoint - JPA</a><br>
+<a href="https://hendrosteven.wordpress.com/2008/03/06/simple-jpa-application-with-netbeans" target="_blank">2. Simple JPA Application</a><br>
+<a href="http://www.javacodegeeks.com/2015/02/jpa-tutorial.html" target="_blank">3. The ULTIMATE Guide</a>
 
 ### Professional skills
 
