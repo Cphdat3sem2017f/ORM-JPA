@@ -46,7 +46,7 @@ Exam preparation - JPAQL
 
 ## References
 
-### JPA
+**JPA**<br>
 <a href="https://www.javacodegeeks.com/minibook/jpa-minibook" target="_blank">JPA Minibook (Pages 3-25)</a><br>
 <a href="http://www.objectdb.com/java/jpa" target="_blank">ObjectDB (Chapter 2)</a><br>
 <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">Wikipedia - ORM</a><br>
@@ -56,24 +56,24 @@ Exam preparation - JPAQL
 <a href="https://www.tutorialspoint.com/jpa/jpa_introduction.htm" target="_blank">Tutorialspoint - JPA Introduction</a><br>
 <a href="https://www.tutorialspoint.com/jpa/jpa_architecture.htm" target="_blank">Tutorialspoint - JPA Architecture</a><br>
 <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html" target="_blank">Oracle Docs - Persistence Package</a><br>
- 
-### Annotations
+
+**Annotations**<br>
 <a href="https://www.tutorialspoint.com/jpa/jpa_orm_components.htm" target="_blank">Tutorialspoint - Annotations</a><br>
 
-### Relationships
+**Relationships**<br>
 <a href="https://www.javacodegeeks.com/minibook/jpa-minibook" target="_blank">JPA Minibook (Pages 34-46)</a><br>
 <a href="https://www.javacodegeeks.com/2015/02/jpa-tutorial.html" target="_blank">Javacodegeeks (Chapters 5, 5.1, 5.2, 5.3)</a><br>
 <a href="https://www.tutorialspoint.com/jpa/jpa_entity_relationships.htm" target="_blank">Tutorialspoint - Relationships</a><br>
 
-### Inheritance
+**Inheritance**<br>
 <a href="https://www.javacodegeeks.com/minibook/jpa-minibook" target="_blank">JPA Minibook (Pages 25-33)</a><br>
 <a href="https://en.wikibooks.org/wiki/Java_Persistence/Inheritance" target="_blank">Wikibooks - Persistence</a><br>
 
-### Entity manager
+**Entity manager**<br>
 <a href="http://www.objectdb.com/java/jpa" target="_blank">ObjectDB (Chapter 3)</a><br>
 <a href="https://www.tutorialspoint.com/jpa/jpa_entity_managers.htm" target="_blank">Tutorialspoint - Entity manager</a><br>
 
-### JPQL
+**JPQL**<br>
 <a href="https://docs.oracle.com/javaee/7/tutorial/partpersist.htm" target="_blank">Oracle Docs (Chapter 39.4)</a><br>
 <a href="http://www.objectdb.com/java/jpa" target="_blank">ObjectDB (Chapter 4)</a><br>
 <a href="https://www.tutorialspoint.com/jpa/jpa_jpql.htm" target="_blank">Tutorialspoint - JPQL</a><br>
