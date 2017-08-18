@@ -9,6 +9,7 @@ Control JPA<br>
 Reverse JPA<br>
 Persistence unit<br>
 Entity classes<br>
+*Exercise 1*<br>
 
 **Day 2 - Relationships**<br>
 Entity manager<br>
@@ -16,24 +17,32 @@ Annotations<br>
 Relationships<br>
 Cardinality<br>
 Direction<br>
+*Exercise 2*<br>
 
 **Day 3 - Inheritance**<br>
 Inheritance<br>
 Strategies<br>
+*Exercise 3*<br>
 
 **Day 4 - JPQL**<br>
 Named queries<br>
 Dynamic queries<br>
 Facade<br>
+*Exercise 4*<br>
 
 **Day 5 - Study point exercises**<br>
-Complete study point exercises
+*Study point exercises*
 
 ## Exercises
 [Exercise 1 - Basic JPA](https://drive.google.com/open?id=1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME)<br>
 [Exercise 2 - Relationships](https://drive.google.com/open?id=1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY)<br>
 [Exercise 3 - Inheritance](https://drive.google.com/open?id=1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI)<br>
 [Exercise 4 - JPQL](https://drive.google.com/open?id=18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc)
+
+##Study point exercises
+[Exam preparation - JPA1]()<br>
+[Exam preparation - JPA2]()<br>
+[Exam preparation - JPAQL]()
 
 ## References
 
