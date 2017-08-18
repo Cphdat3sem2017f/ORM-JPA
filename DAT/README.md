@@ -39,10 +39,10 @@ Facade<br>
 [Exercise 3 - Inheritance](https://drive.google.com/open?id=1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI)<br>
 [Exercise 4 - JPQL](https://drive.google.com/open?id=18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc)
 
-##Study point exercises
-[Exam preparation - JPA1]()<br>
-[Exam preparation - JPA2]()<br>
-[Exam preparation - JPAQL]()
+## Study point exercises
+Exam preparation - JPA1<br>
+Exam preparation - JPA2<br>
+Exam preparation - JPAQL
 
 ## References
 
