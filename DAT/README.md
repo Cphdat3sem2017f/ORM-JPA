@@ -2,36 +2,32 @@
 
 ## Plan
 
-**Day 1 - Introduction to ORM**
+**Day 1 - Introduction to ORM**<br>
 Overview<br>
 Set up JPA<br>
 Control JPA<br>
 Reverse JPA<br>
 Persistence unit<br>
 Entity classes<br>
-*Exercise 1*<br>
 
-**Day 2 - Relationships**
+**Day 2 - Relationships**<br>
 Entity manager<br>
 Annotations<br>
 Relationships<br>
 Cardinality<br>
 Direction<br>
-*Exercise 2*<br>
 
-**Day 3 - Inheritance**
+**Day 3 - Inheritance**<br>
 Inheritance<br>
 Strategies<br>
-*Exercise 3*<br>
 
-**Day 4 - JPQL**
+**Day 4 - JPQL**<br>
 Named queries<br>
 Dynamic queries<br>
 Facade<br>
-*Exercise 4*<br>
 
-**Day 5 - Study point exercises**
-*Study point exercises*
+**Day 5 - Study point exercises**<br>
+Complete study point exercises
 
 ## Exercises
 [Exercise 1 - Basic JPA](https://drive.google.com/open?id=1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME)<br>
