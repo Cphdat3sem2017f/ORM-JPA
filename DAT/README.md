@@ -34,15 +34,13 @@ Facade<br>
 *Study point exercises*
 
 ## Exercises
-[Exercise 1 - Basic JPA](https://drive.google.com/open?id=1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME)<br>
-[Exercise 2 - Relationships](https://drive.google.com/open?id=1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY)<br>
-[Exercise 3 - Inheritance](https://drive.google.com/open?id=1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI)<br>
-[Exercise 4 - JPQL](https://drive.google.com/open?id=18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc)
+[Exercise 1 - Basic JPA](https://docs.google.com/document/d/1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME/edit?usp=sharing)<br>
+[Exercise 2 - Relationships](https://docs.google.com/document/d/1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY/edit?usp=sharing)<br>
+[Exercise 3 - Inheritance](https://docs.google.com/document/d/1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI/edit?usp=sharing)<br>
+[Exercise 4 - JPQL](https://docs.google.com/document/d/18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc/edit?usp=sharing)
 
 ## Study point exercises
-Exam preparation - JPA1<br>
-Exam preparation - JPA2<br>
-Exam preparation - JPAQL
+[Study point exercises](https://docs.google.com/document/d/1BKihRmnhl18P5GCzSlO3UnDlUBm5fEaLUalaiTTxev4/edit?usp=sharing)
 
 ## References
 
