@@ -1,19 +1,5 @@
 # ORM (Object Relational Mapping) with JPA (Java Persistence API)
 
-## Learning objectives
-
-ORM / JPA / JPQL
-- Create database connection
-- Create persistence unit
-- Create entities
-- Create facade to handle entities
-- Create named / dynamic queries
-- Use annotations
-- Use entity managers
-- Handle relations
-- Handle inheritance
-- Handle entities ( Persist / Merge / Remove / Find )
-
 ## Plan
 
 ### Day 1 - Introduction to ORM
