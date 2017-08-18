@@ -3,34 +3,34 @@
 ## Plan
 
 ### Day 1 - Introduction to ORM
-Overview
-Set up JPA
-Control JPA
-Reverse JPA
-Persistence unit
-Entity classes
+Overview<br>
+Set up JPA<br>
+Control JPA<br>
+Reverse JPA<br>
+Persistence unit<br>
+Entity classes<br>
 
 **Exercise 1**
 
 ### Day 2 - Relationships
-Entity manager
-Annotations
-Relationships
-Cardinality
-Direction
+Entity manager<br>
+Annotations<br>
+Relationships<br>
+Cardinality<br>
+Direction<br>
 
 **Exercise 2**
 
 ### Day 3 - Inheritance
-Inheritance
-Strategies
+Inheritance<br>
+Strategies<br>
 
 **Exercise 3**
 
 ### Day 4 - JPQL
-Named queries
-Dynamic queries
-Facade
+Named queries<br>
+Dynamic queries<br>
+Facade<br>
 
 **Exercise 4**
 
@@ -43,7 +43,7 @@ Facade
 [Exercise 3 - Inheritance](https://drive.google.com/open?id=1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI)<br>
 [Exercise 4 - JPQL](https://drive.google.com/open?id=18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc)
 
-## References:
+## References
 
 ### JPA
 <a href="https://www.javacodegeeks.com/minibook/jpa-minibook" target="_blank">JPA Minibook (Pages 3-25)</a><br>
