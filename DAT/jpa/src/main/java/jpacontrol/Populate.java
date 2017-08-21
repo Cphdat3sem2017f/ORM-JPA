@@ -10,6 +10,7 @@ public class Populate
     public static void main(String[] args)
     {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPU");
+        
         EntityManager em = emf.createEntityManager();
                 
         em.getTransaction().begin();
@@ -19,6 +20,7 @@ public class Populate
         em.persist(u);
 
         em.getTransaction().commit();
+        
         em.close();
     }
 }
