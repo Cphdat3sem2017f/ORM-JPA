@@ -11,13 +11,13 @@ public class Populate
     {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPU");
         EntityManager em = emf.createEntityManager();
-        
-        
+                
         em.getTransaction().begin();
-        
+
         User u = new User();
         u.setFirstName("William");
         em.persist(u);
+
         em.getTransaction().commit();
         em.close();
     }
