@@ -44,6 +44,7 @@ Facade<br>
 
 ## References
 
+[Lars' slides](learning-resources/ORM-intro.pdf)
 <a href="https://en.wikibooks.org/wiki/Java_Persistence" target="_blank">Wikibooks - Java Persistence</a><br>
 <a href="https://en.wikibooks.org/wiki/Java_Persistence/EclipseLink" target="_blank">Wikibooks - EclipseLink</a><br>
 <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">Wikipedia - ORM</a><br>
