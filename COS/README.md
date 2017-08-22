@@ -2,7 +2,7 @@
 
 ## Plan
 
-**Day 1 - Introduction to ORM**<br>
+**[Day 1](/Day1) - Introduction to ORM**<br>
 Overview<br>
 Set up JPA<br>
 Control JPA<br>
@@ -11,7 +11,7 @@ Persistence unit<br>
 Entity classes<br>
 *Exercise 1*<br>
 
-**Day 2 - Relationships**<br>
+**[Day 2](/Day2) - Relationships**<br>
 Entity manager<br>
 Annotations<br>
 Relationships<br>
