@@ -1,21 +1,73 @@
 package entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.TableGenerator;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 @Entity
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @TableGenerator(name="TG", allocationSize = 30, initialValue = 222)
+    @GeneratedValue(strategy = GenerationType.TABLE, generator="TG")
     private Long id;
     
     private String firstName;
 
+    private Date testDate;
+    
+    @Temporal(TemporalType.DATE)
+    private Date creationDate;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date expirationDate;
+    
+    @Transient
+    private boolean born;
+    
+    private Address address;
+
+    @ManyToMany
+    private List<Shoe> shoes = new ArrayList<>();
+    
+    public Address getAddress()
+    {
+        return address;
+    }
+
+    public void setAddress(Address address)
+    {
+        this.address = address;
+    }
+
+    public List<Shoe> getShoes()
+    {
+        return shoes;
+    }
+    
+    public void addShoe(Shoe s)
+    {
+        this.shoes.add(s);
+    }
+
+    public void setShoes(List<Shoe> shoes)
+    {
+        this.shoes = shoes;
+    }
+    
+    
+    
     public Long getId()
     {
         return id;

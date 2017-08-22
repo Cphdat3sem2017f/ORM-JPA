@@ -1,6 +1,8 @@
 # ORM (Object Relational Mapping) with JPA (Java Persistence API)
 <a href="ORM_JPA_JPQL-Notes.pdf" target="_blank">ORM_JPA_JPQL - Notes</a><br>
 <a href="https://www.twitch.tv/videos/168683174" target="_blank">Video - JPA Setup</a><br>
+<a href="https://www.twitch.tv/videos/168934609" target="_blank">Video - JPA DatabaseTable->EntityClass</a><br>
+<a href="https://www.twitch.tv/videos/168939780" target="_blank">Video - JPA Relationships</a><br>
 <a href="jpa/" target="_blank">Netbeans Maven Project - JPA Setup</a><br>
 
 ## Plan
