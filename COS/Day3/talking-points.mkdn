@@ -23,7 +23,7 @@ Today:
 
   * SINGLE\_TABLE
   * JOINED
-  *TABLE\_PER\_CLASS
+  * TABLE\_PER\_CLASS
 
 In java:
 ```java
