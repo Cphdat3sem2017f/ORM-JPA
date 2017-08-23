@@ -1,4 +1,5 @@
 #ORM Inherritance
+
 Today:
 
   * Inherritance strategies in JPA
@@ -12,7 +13,7 @@ Today:
 
 ##Inheritance strategies in JPA
 
-  * SINGLE_TABLE
+  * SINGLE\_TABLE
   * JOINED
    *TABLE\_PER\_CLASS
 
@@ -33,10 +34,11 @@ In java:
 	}
 ```
 
-##SINGLE_TABLE
+##SINGLE\_TABLE
+
 This is the default.
 
-With the SINGLE_TABLE strategy, one table contains all information; both from
+With the SINGLE\_TABLE strategy, one table contains all information; both from
 super and subclasses. All fields from all subclasses are present as columns in
 the table. A _discriminator_ column is used to store the name of the class, so
 that the ORM knows which subclass to create each row as.
@@ -75,7 +77,8 @@ Cons:
     column.
 
 ##TABLE PER CLASS
-In the TABLE_PER_CLASS strategy, every class has its own table, just like in the
+
+In the TABLE\_PER\_CLASS strategy, every class has its own table, just like in the
 JOINED strategy, but _all_ attributes of a superclass are replicated in the
 subclass tables, not just the id.
 
