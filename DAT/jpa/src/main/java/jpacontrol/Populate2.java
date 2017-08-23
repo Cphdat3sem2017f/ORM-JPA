@@ -8,7 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class Populate
+public class Populate2
 {
     public static void main(String[] args)
     {
@@ -20,36 +20,26 @@ public class Populate
 
         User u = new User();
         u.setFirstName("William");
-        
-        Address a = new Address("high road 1", "new york");
-        u.setAddress(a);
-        
-        em.persist(a);
         em.persist(u);
-
-        User u2 = new User();
-        u2.setFirstName("Bill");
+        u.setFirstName("George");
+        em.persist(u);
         
-        Address a2 = new Address("high road 1", "new york");
-        u2.setAddress(a2);
+        User u1 = new User();
+        u1.setFirstName("John");
+        u1.setId(222l);
+        em.merge(u1);
+        u1.setFirstName("Jack");
+        em.merge(u1);
         
-        Shoe s1 = new Shoe();
-        Shoe s2 = new Shoe();
+        User u2 = em.find(User.class, 222l);
+        System.out.println("FUNDET: " + u2.getFirstName());
+        u2.setFirstName("NoName");
         
-        u.addShoe(s1);
-        u.addShoe(s2);
+        em.merge(u2);
         
-        s1.addUser(u);
-        s1.addUser(u2);
+        em.remove(u2);
         
-        em.persist(a2);
-        em.persist(u2);
-        em.persist(s1);
-        em.persist(s2);
         
-        UserBasic ub = new UserBasic();
-        ub.setLastName("Johnson");
-        em.persist(ub);
         
         em.getTransaction().commit();
         

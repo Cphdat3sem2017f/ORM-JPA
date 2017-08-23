@@ -6,6 +6,7 @@
     <class>entity.Person</class>
     <class>entity.Address</class>
     <class>entity.Shoe</class>
+    <class>entity.UserBasic</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
