@@ -64,7 +64,6 @@ Facade<br>
 <a href="https://en.wikibooks.org/wiki/Java_Persistence/Inheritance" target="_blank">Wikibooks - Persistence</a><br>
 
 **Entity manager**<br>
-<a href="http://www.objectdb.com/java/jpa" target="_blank">ObjectDB (Chapter 3)</a><br>
 <a href="https://www.tutorialspoint.com/jpa/jpa_entity_managers.htm" target="_blank">Tutorialspoint - Entity manager</a><br>
 
 **JPQL**<br>
