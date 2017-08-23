@@ -27,6 +27,8 @@ Today:
 
 In java:
 ```java
+	@Entity
+	@Inheritance(strategy = InherritanceType.JOINED)
 	public class Item {
 		private long id..
 		private String title..
