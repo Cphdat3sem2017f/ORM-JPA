@@ -1,0 +1,91 @@
+#ORM Inherritance
+Today:
+
+  * Inherritance strategies in JPA
+
+##Inheritance in relational models
+
+  * Draw inheritance diagram (students; this is similar to the one in the JPA
+    wikibook)
+  * There is no such thing as inheritance in relational modelling
+  * But we can _implement_ inheritance _in_ a relational model!
+
+##Inheritance strategies in JPA
+
+  * SINGLE_TABLE
+  * JOINED
+   *TABLE\_PER\_CLASS
+
+In java:
+```java
+	public class Item {
+		private long id..
+		private String title..
+	}
+
+	//Note: NO IDs in sub-classes! This is important
+	public class Cd extends item {
+		private int numberOfSongs..
+	}
+
+	public class Book extends item {
+		private String isbn..
+	}
+```
+
+##SINGLE_TABLE
+This is the default.
+
+With the SINGLE_TABLE strategy, one table contains all information; both from
+super and subclasses. All fields from all subclasses are present as columns in
+the table. A _discriminator_ column is used to store the name of the class, so
+that the ORM knows which subclass to create each row as.
+
+Pros:
+
+  * Simple, understandable
+
+Cons:
+
+  * Adding entities, or attributes forces us to change the table, update
+    existing rows etc, _for all rows/subclasses_!
+  * All columns from the subclasses must be nullable
+  * Hard to generate classes from existing DB, if there is no discriminator
+    column.
+
+##JOINED
+With the JOINED strategy, every class in the inheritance hierarchy gets its own
+table. Each table has an id column, so that classes can be related to their
+superclasses. That is; the id of a row in the subclass table is the same as the
+id for the corresponding row in the superclass table. In java, we _still_ do not
+implement ids in the subclasses.
+The superclass table still uses a discriminator column.
+
+Pros:
+
+  * Still simple (or at least intuitive)
+  * Closely corresponds to how inheritance works in OOP.
+
+Cons:
+
+  * Querying now relies on joins, which are generally slower than queries on a
+    single table. The number of joins is equal to the number of levels in the
+    hierarchy minus 1!
+  * Hard to generate classes from existing DB, if there is no discriminator
+    column.
+
+##TABLE PER CLASS
+In the TABLE_PER_CLASS strategy, every class has its own table, just like in the
+JOINED strategy, but _all_ attributes of a superclass are replicated in the
+subclass tables, not just the id.
+
+Pros:
+
+  * Performs well for queries of just one subclass, as no joins are needed.
+
+Cons:
+
+  *  Queries that go "across" the class hierarchy are still expensive (maybe
+     even more so than with the JOINED strategy)
+  * Support for this is **optional** for JPA providers, so it may not be
+    portable, or even possible for you for you.

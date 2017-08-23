@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #cccccc; background-color: #303030; }
+code > span.kw { color: #f0dfaf; } /* Keyword */
+code > span.dt { color: #dfdfbf; } /* DataType */
+code > span.dv { color: #dcdccc; } /* DecVal */
+code > span.bn { color: #dca3a3; } /* BaseN */
+code > span.fl { color: #c0bed1; } /* Float */
+code > span.ch { color: #dca3a3; } /* Char */
+code > span.st { color: #cc9393; } /* String */
+code > span.co { color: #7f9f7f; } /* Comment */
+code > span.ot { color: #efef8f; } /* Other */
+code > span.al { color: #ffcfaf; } /* Alert */
+code > span.fu { color: #efef8f; } /* Function */
+code > span.er { color: #c3bf9f; } /* Error */
+code > span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
+code > span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
+code > span.sc { color: #dca3a3; } /* SpecialChar */
+code > span.vs { color: #cc9393; } /* VerbatimString */
+code > span.ss { color: #cc9393; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { } /* Variable */
+code > span.cf { color: #f0dfaf; } /* ControlFlow */
+code > span.op { color: #f0efd0; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
+code > span.at { } /* Attribute */
+code > span.do { color: #7f9f7f; } /* Documentation */
+code > span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
+code > span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
+code > span.in { color: #7f9f7f; font-weight: bold; } /* Information */
+  </style>
+</head>
+<body>
+<h1 id="orm-inherritance">ORM Inherritance</h1>
+<p>Today:</p>
+<ul>
+<li>Inherritance strategies in JPA</li>
+</ul>
+<h2 id="inheritance-in-relational-models">Inheritance in relational models</h2>
+<ul>
+<li>Draw inheritance diagram (students; this is similar to the one in the JPA wikibook)</li>
+<li>There is no such thing as inheritance in relational modelling</li>
+<li>But we can <em>implement</em> inheritance <em>in</em> a relational model!</li>
+</ul>
+<h2 id="inheritance-strategies-in-jpa">Inheritance strategies in JPA</h2>
+<ul>
+<li>SINGLE_TABLE</li>
+<li>JOINED</li>
+<li>TABLE PER CLASS</li>
+</ul>
+<p>In java:</p>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java">    <span class="kw">public</span> <span class="kw">class</span> Item {
+        <span class="kw">private</span> <span class="dt">long</span> id..
+        <span class="kw">private</span> <span class="bu">String</span> title..
+    }
+
+    <span class="co">//Note: NO IDs in sub-classes! This is important</span>
+    <span class="kw">public</span> <span class="kw">class</span> Cd <span class="kw">extends</span> item {
+        <span class="kw">private</span> <span class="dt">int</span> numberOfSongs..
+    }
+
+    <span class="kw">public</span> <span class="kw">class</span> <span class="bu">Book</span> <span class="kw">extends</span> item {
+        <span class="kw">private</span> <span class="bu">String</span> isbn..
+    }</code></pre></div>
+<h2 id="single_table">SINGLE_TABLE</h2>
+<p>This is the default.</p>
+<p>With the SINGLE_TABLE strategy, one table contains all information; both from super and subclasses. All fields from all subclasses are present as columns in the table. A <em>discriminator</em> column is used to store the name of the class, so that the ORM knows which subclass to create each row as.</p>
+<p>Pros:</p>
+<ul>
+<li>Simple, understandable</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Adding entities, or attributes forces us to change the table, update existing rows etc, <em>for all rows/subclasses</em>!</li>
+<li>All columns from the subclasses must be nullable</li>
+<li>Hard to generate classes from existing DB, if there is no discriminator column.</li>
+</ul>
+<h2 id="joined">JOINED</h2>
+<p>With the JOINED strategy, every class in the inheritance hierarchy gets a corresponding table.</p>
+<h2 id="table-per-class">TABLE PER CLASS</h2>
+</body>
+</html>

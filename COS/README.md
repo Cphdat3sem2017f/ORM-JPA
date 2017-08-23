@@ -19,7 +19,7 @@ Cardinality<br>
 Direction<br>
 *Exercise 2*<br>
 
-**Day 3 - Inheritance**<br>
+**[Day 3](Day3) - Inheritance**<br>
 Inheritance<br>
 Strategies<br>
 *Exercise 3*<br>
