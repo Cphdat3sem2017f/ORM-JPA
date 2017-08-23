@@ -56,6 +56,7 @@ Cons:
     column.
 
 ##JOINED
+
 With the JOINED strategy, every class in the inheritance hierarchy gets its own
 table. Each table has an id column, so that classes can be related to their
 superclasses. That is; the id of a row in the subclass table is the same as the
@@ -76,7 +77,7 @@ Cons:
   * Hard to generate classes from existing DB, if there is no discriminator
     column.
 
-##TABLE PER CLASS
+##TABLE\_PER\_CLASS
 
 In the TABLE\_PER\_CLASS strategy, every class has its own table, just like in the
 JOINED strategy, but _all_ attributes of a superclass are replicated in the
