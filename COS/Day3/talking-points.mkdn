@@ -97,6 +97,7 @@ Pros:
 
 Cons:
 
+  * denormalized "messy" database
   *  Queries that go "across" the class hierarchy are still expensive (maybe
      even more so than with the JOINED strategy)
   * Support for this is **optional** for JPA providers, so it may not be
