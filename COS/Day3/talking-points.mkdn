@@ -1,5 +1,13 @@
 # ORM Inherritance
 
+Previously:
+  * Why/why not ORM?
+  * Definition of an entity class in JPA
+  * Generating tables from classes
+  * Generating classes from tables
+  * Persisting collections in entities
+  * Persisting relations between entities
+
 Today:
 
   * Inherritance strategies in JPA
