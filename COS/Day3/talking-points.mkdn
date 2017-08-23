@@ -35,10 +35,12 @@ In java:
 	}
 
 	//Note: NO IDs in sub-classes! This is important
+	@Entity
 	public class Cd extends item {
 		private int numberOfSongs..
 	}
 
+	@Entity
 	public class Book extends item {
 		private String isbn..
 	}
