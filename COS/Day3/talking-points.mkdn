@@ -1,17 +1,17 @@
-#ORM Inherritance
+# ORM Inherritance
 
 Today:
 
   * Inherritance strategies in JPA
 
-##Inheritance in relational models
+## Inheritance in relational models
 
   * Draw inheritance diagram (students; this is similar to the one in the JPA
     wikibook)
   * There is no such thing as inheritance in relational modelling
   * But we can _implement_ inheritance _in_ a relational model!
 
-##Inheritance strategies in JPA
+## Inheritance strategies in JPA
 
   * SINGLE\_TABLE
   * JOINED
@@ -34,7 +34,7 @@ In java:
 	}
 ```
 
-##SINGLE\_TABLE
+## SINGLE\_TABLE
 
 This is the default.
 
@@ -55,7 +55,7 @@ Cons:
   * Hard to generate classes from existing DB, if there is no discriminator
     column.
 
-##JOINED
+## JOINED
 
 With the JOINED strategy, every class in the inheritance hierarchy gets its own
 table. Each table has an id column, so that classes can be related to their
@@ -77,7 +77,7 @@ Cons:
   * Hard to generate classes from existing DB, if there is no discriminator
     column.
 
-##TABLE\_PER\_CLASS
+## TABLE\_PER\_CLASS
 
 In the TABLE\_PER\_CLASS strategy, every class has its own table, just like in the
 JOINED strategy, but _all_ attributes of a superclass are replicated in the
