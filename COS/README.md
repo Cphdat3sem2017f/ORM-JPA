@@ -43,8 +43,11 @@ Facade<br>
 [Study point exercises](https://docs.google.com/document/d/1BKihRmnhl18P5GCzSlO3UnDlUBm5fEaLUalaiTTxev4/edit?usp=sharing)
 
 ## References
+[Video JPA setup](https://www.twitch.tv/videos/168683174)
+[Video JPA database table -> entityclass](https://www.twitch.tv/videos/168934609)
+[Vide JPA relationships](https://www.twitch.tv/videos/168939780)
 
-[Lars' slides](learning-resources/ORM-intro.pdf)
+[Lars' slides](learning-resources/ORM-intro.pdf)<br>
 <a href="https://en.wikibooks.org/wiki/Java_Persistence" target="_blank">Wikibooks - Java Persistence</a><br>
 <a href="https://en.wikibooks.org/wiki/Java_Persistence/EclipseLink" target="_blank">Wikibooks - EclipseLink</a><br>
 <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">Wikipedia - ORM</a><br>
