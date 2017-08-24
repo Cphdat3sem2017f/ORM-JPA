@@ -37,9 +37,9 @@ public class Person implements Serializable {
     {
     }
 
-    public Person(Integer idPerson)
+    public Person(String mail)
     {
-        this.idPerson = idPerson;
+        this.mail = mail;
     }
 
     public Integer getIdPerson()
@@ -89,7 +89,7 @@ public class Person implements Serializable {
     @Override
     public String toString()
     {
-        return "entity.Person[ idPerson=" + idPerson + " ]";
+        return "entity.Person[ idPerson=" + idPerson + ", mail=" + mail + " ]";
     }
 
 }

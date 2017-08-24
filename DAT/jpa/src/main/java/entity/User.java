@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,13 +12,19 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.TableGenerator;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Inheritance(strategy=InheritanceType.JOINED)
+@NamedQueries(
+{
+    @NamedQuery(name = "UsersFindBorn", query = "SELECT u FROM User u WHERE u.born = :userBorn")
+})
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -28,21 +35,32 @@ public class User implements Serializable {
     
     private String firstName;
 
-    private Date testDate;
-    
     @Temporal(TemporalType.DATE)
     private Date creationDate;
-    
+    @Temporal(TemporalType.TIME)
+    private Date testDate;
     @Temporal(TemporalType.TIMESTAMP)
     private Date expirationDate;
     
-    @Transient
     private boolean born;
+    
+    @Transient
+    private String temp;
     
     private Address address;
 
-    @ManyToMany
+    @ManyToMany//(cascade=CascadeType.PERSIST)
     private List<Shoe> shoes = new ArrayList<>();
+
+    public User()
+    {
+    }
+
+    public User(String firstName, boolean born)
+    {
+        this.firstName = firstName;
+        this.born = born;
+    }
     
     public Address getAddress()
     {
@@ -69,8 +87,6 @@ public class User implements Serializable {
         this.shoes = shoes;
     }
     
-    
-    
     public Long getId()
     {
         return id;
@@ -91,8 +107,6 @@ public class User implements Serializable {
         this.firstName = firstName;
     }
 
-    
-    
     @Override
     public int hashCode()
     {
@@ -120,7 +134,7 @@ public class User implements Serializable {
     @Override
     public String toString()
     {
-        return "entity.User[ id=" + id + " ]";
+        return "entity.User[ id=" + id + ", firstName=" + firstName + ", born=" + born + " ]";
     }
 
 }
