@@ -12,13 +12,34 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Shoe implements Serializable {
 
-    @ManyToMany(mappedBy = "shoes")
+    @ManyToMany(mappedBy="shoes")
     private List<User> users = new ArrayList();
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
+    private String title;
+
+    public Shoe()
+    {
+    }
+
+    public Shoe(String title)
+    {
+        this.title = title;
+    }
+
+    public String getTitle()
+    {
+        return title;
+    }
+
+    public void setTitle(String title)
+    {
+        this.title = title;
+    }
 
     public Long getId()
     {

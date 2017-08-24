@@ -1,0 +1,12 @@
+jpacontrol\ManageCascade.class
+jpacontrol\Populate.class
+entity\Address.class
+entity\Person.class
+entity\UserBasic.class
+jpacontrol\JPQL.class
+jpacontrol\Structure.class
+facade\FacadeUserInterface.class
+entity\User.class
+facade\FacadeUser.class
+jpacontrol\UseFacadeUser.class
+entity\Shoe.class
