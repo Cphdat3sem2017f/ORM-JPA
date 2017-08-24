@@ -69,4 +69,6 @@ Facade<br>
 **JPQL**<br>
 [Wikibooks - JPQ](https://en.wikibooks.org/wiki/Java_Persistence/JPQL)  
 this the main resource on JPQL)  
-[JBay Blog - JPQL Tutorial](http://blog.jbaysolutions.com/2014/10/16/jpa-2-tutorial-queries-on-the-model)
+[JBay Blog - JPQL Tutorial](http://blog.jbaysolutions.com/2014/10/16/jpa-2-tutorial-queries-on-the-model)  
+[JPQL demo part 1](https://drive.google.com/open?id=0BwZfnBsxgR1jYXdqMjVTU3dGTDA)  
+[JPQL demo part 2](https://drive.google.com/open?id=0BwZfnBsxgR1jVWlfd28zN2JYUm8) -- this may not play in the browser, but you can download it.
